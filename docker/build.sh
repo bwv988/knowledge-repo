@@ -10,4 +10,4 @@ function build_img() {
 }
 
 IMGPREFIX=bwv988
-build_img $IMGPREFIX knowledge-repo
+build_img $IMGPREFIX ksrepo

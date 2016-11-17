@@ -1,0 +1,14 @@
+# Compose file for airbnb's knowledge sharing repo.
+
+version: '2'
+
+services:
+  ksrepo:
+    image: bwv988/ksrepo
+      container_name: ksrepo
+      env_file:
+        - ksrepo.env
+      ports:
+        - "7000:7000"
+      volumes:
+        - $HOSTREPODIR:/repo
